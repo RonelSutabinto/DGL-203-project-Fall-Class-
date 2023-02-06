@@ -19,9 +19,7 @@
 
         <!-- Libraries CSS Files -->
         <link href="css/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/vendor/animate/animate.min.css" rel="stylesheet">
         <link href="css/vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="css/vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
         <!-- Main Stylesheet File -->
         <link href="css/style.css" rel="stylesheet">
@@ -77,30 +75,19 @@
                         <div class="col-md-12">
                             <div class="form-row">
                                 
-                                
-                                    <div class="control-group col-md-4">
-                                        <div class="form-group">
-                                            <div class="input-group date" id="date" data-target-input="nearest">
-                                                <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#date"/>
-                                                <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
-                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group col-md-4">
-                                        <div class="form-group">
-                                            <div class="input-group date" id="time" data-target-input="nearest">
-                                                <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time"/>
-                                                <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
-                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                <div class="control-group col-md-4">
-                                    <button class="btn btn-block btn-book">Book Now</button>
+                                <div class="control-group col-md-9">
+                                    <select class="custom-select">
+                                        <option selected>Menu Category</option>
+                                        <option value="1">Soup</option>
+                                        <option value="2">Salad</option>
+                                        <option value="2">Sandwich</option>
+                                        <option value="3">Juice</option>
+                                        <option value="4">Grilled</option>
+                                        <option value="5">Fruit Shake</option>
+                                    </select>
+                                </div>
+                                <div class="control-group col-md-3">
+                                    <button class="btn btn-block btn-book">Filter Menu</button>
                                 </div>
                             </div>
                         </div>
@@ -114,111 +101,98 @@
                 <div class="container">
                     <header class="section-header">
                         <h3>delicious Food Menu</h3>
-
-                        
                     </header>
-                    
-                    <div class="filter-wrapper">
-                        <!-- filter Items -->
-                        <section>
-                        <div class="filter-items">
-                            <span class="item active" data-name="all">All</span>
-                            <span class="item" data-name="salads">Salads</span>
-                            <span class="item" data-name="soups">Soups</span>
-                            <span class="item" data-name="sandwiches">Sandwiches</span>
-                            <span class="item" data-name="mainDish">Main Dish</span>
-                            <span class="item" data-name="drinks">Drinks</span>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="single-menu">
+                                <img class="img-fluid" src="img/menu-1.jpg" />
+                                <h4>Blueberry Pie</h4>
+                                <span>$20.00 / Person</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="order.html">Order Now</a>
+                            </div>
                         </div>
-                        </section>
-                        <!-- filter Images -->
-                        <div class="gallery">
-                            <div class="image" data-name="salads">
-                                <span><img src="img/menu-3.jpg" alt=""></span>
-                                <div class="single-filter">
-                                    <h4>Viggies</h4>
-                                    <h5>$12.00 / Person</h5>
-                                    <a href="">Order Now</a>
-                                </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="single-menu">
+                                <img class="img-fluid" src="img/menu-2.jpg" />
+                                <h4>Chicken Burger</h4>
+                                <span>$10.00 / Person</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="order.html">Order Now</a>
                             </div>
-                            <div class="image" data-name="soups">
-                                <span><img src="img/menu-5.jpg" alt=""></span>
-                                <div class="single-filter">
-                                    <h4>Chicken Soup</h4>
-                                    <h5>$18.00 / Person</h5>
-                                    <a href="">Order Now</a>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="single-menu">
+                                <img class="img-fluid" src="img/menu-3.jpg" />
+                                <h4>Vegetable Pasta</h4>
+                                <span>$12.00 / Person</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="order.html">Order Now</a>
                             </div>
-                            <div class="image" data-name="sandwiches">
-                                <span><img src="img/menu-2.jpg" alt=""></span>
-                                <div class="single-filter">
-                                    <h4>Burger</h4>
-                                    <h5>$10.00 / Person</h5>
-                                    <a href="">Order Now</a>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="single-menu">
+                                <img class="img-fluid" src="img/menu-4.jpg" />
+                                <h4>Grilled Fish</h4>
+                                <span>$8.00 / Person</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="order.html">Order Now</a>
                             </div>
-                            <div class="image" data-name="sandwiches">
-                                <span><img src="img/menu-7_.jpg" alt=""></span>
-                                <div class="single-filter">
-                                    <h4>Rolled Sandwich</h4>
-                                    <h5>$12.00 / Person</h5>
-                                    <a href="">Order Now</a>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="single-menu">
+                                <img class="img-fluid" src="img/menu-5.jpg" />
+                                <h4>Chicken Soup</h4>
+                                <span>$18.00 / Person</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="order.html">Order Now</a>
                             </div>
-                            <div class="image" data-name="mainDish">
-                                <span><img src="img/menu-8.jpg" alt=""></span>
-                                <div class="single-filter">
-                                    <h4>Rice and Soup</h4>
-                                    <h5>$21.00 / Person</h5>
-                                    <a href="">Order Now</a>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="single-menu">
+                                <img class="img-fluid" src="img/menu-6.jpg" />
+                                <h4>Wine and Viggies</h4>
+                                <span>$15.00 / Person</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="order.html">Order Now</a>
                             </div>
-                            <div class="image" data-name="mainDish">
-                                <span><img src="img/menu-4.jpg" alt=""></span>
-                                <div class="single-filter">
-                                    <h4>Grilled Salmon</h4>
-                                    <h5>$14.00 / Person</h5>
-                                    <a href="">Order Now</a>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="single-menu">
+                                <img class="img-fluid" src="img/menu-7_.jpg" />
+                                <h4>Rolled Sandwich</h4>
+                                <span>$10.00 / Person</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="order.html">Order Now</a>
                             </div>
-                            <div class="image" data-name="mainDish">
-                                <span><img src="img/menu-1.jpg" alt=""></span>
-                                <div class="single-filter">
-                                    <h4>Blueberry Pie</h4>
-                                    <h5>$16.00 / Person</h5>
-                                    <a href="">Order Now</a>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="single-menu">
+                                <img class="img-fluid" src="img/menu-8.jpg" />
+                                <h4>Rice and Soup</h4>
+                                <span>$22.00 / Person</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="order.html">Order Now</a>
                             </div>
-                            <div class="image" data-name="drinks">
-                                <span><img src="img/menu-6.jpg" alt=""></span>
-                                <div class="single-filter">
-                                    <h4>Wine and Viggies</h4>
-                                    <h5>$8.00 / Person</h5>
-                                    <a href="">Order Now</a>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 d-sm-none d-md-block d-lg-none">
+                            <div class="single-menu">
+                                <img class="img-fluid" src="img/menu-9.jpg" />
+                                <h4>Vestibulum Posuere</h4>
+                                <span>$16.00 / Person</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="order.html">Order Now</a>
                             </div>
                         </div>
                     </div>
-                    <!-- fullscreen img preview box -->
-                    <div class="preview-box">
-                        <div class="details">
-                        <span class="title">Image Category: <p></p></span>
-                        <span class="icon fas fa-times"></span>
-                        </div>
-                        <div class="image-box"><img src="" alt=""></div>
-                    </div>
-                    <div class="shadow"></div>
-                    </section>
-                    <!-- Menu Section End-->  
                 </div>
-
-
-                
-
+            </section>
+            <!-- Menu Section End-->            
             <!-- Support Section Start -->
             <section id="support">
                 <div class="container">
                     <h1>
-                        Need Reservations? Call Us 24/7 at +1-778-585-9448
+                        Need Reservations? Call Us 24/7 at +1-234-567-8900
                     </h1>
                 </div>
             </section>
